@@ -52,3 +52,25 @@ service AddService {
   rpc GetUser(Request) returns (Response);
 }
 ```
+
+after running the genProto.sh this is the outcome:
+```bash
+soumen@UB:~/java_lab/proto/protobuf-tutorial$ ll
+total 16
+-rw-rw-r-- 1 soumen soumen 1011 Jan 24 02:08 README.md
+drwxrwxr-x 2 soumen soumen 4096 Jan 24 02:10 proto
+-rwxr-xr-x 1 soumen soumen   93 Jan 24 02:11 genProto.sh
+drwxrwxr-x 3 soumen soumen 4096 Jan 24 02:11 users-java
+soumen@UB:~/java_lab/proto/protobuf-tutorial$ cd users-java/
+soumen@UB:~/java_lab/proto/protobuf-tutorial/users-java$ find .
+.
+./com
+./com/example
+./com/example/tutorial
+./com/example/tutorial/protos
+./com/example/tutorial/protos/UsersProtos.java
+./com/example/tutorial/protos/ResponseOrBuilder.java
+./com/example/tutorial/protos/RequestOrBuilder.java
+./com/example/tutorial/protos/Request.java
+./com/example/tutorial/protos/Response.java
+```
