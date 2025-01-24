@@ -7,19 +7,48 @@
   - https://github.com/google/gnostic/tree/main/cmd/protoc-gen-openapi
   - https://www.baeldung.com/spring-rest-api-with-protocol-buffers
   - https://medium.com/@amsokol.com/tutorial-how-to-develop-go-grpc-microservice-with-http-rest-endpoint-middleware-kubernetes-daebb36a97e9
-2. 
+2. Command History:
 
-  694  git clone https://github.com/sadnemous/protobuf-tutorial.git
-  695  ll
-  696  cd protobuf-tutorial/
-  697  cp ../tutorial.proto  .
-  698  ll
-  699  git branch
-  700  git checkout feat-1
-  701  git checkout -b feat-1
-  702  git add tutorial.proto 
-  703  ll
-  704  touch genProto.sh
-  705  chmod 755 genProto.sh
-  706  cat>genProto.sh 
-  707  history
+```bash
+git clone https://github.com/sadnemous/protobuf-tutorial.git
+mkdir proto
+touch proto/users.proto
+# add codes please see below.. 
+git branch
+git checkout feat-1
+git checkout -b feat-1
+git add tutorial.proto 
+touch genProto.sh
+chmod 755 genProto.sh
+cat>genProto.sh 
+
+./genProto.sh
+
+cd com/example/tutorial/protos/
+```
+
+my users.proto is like:
+```proto
+syntax = "proto3";
+
+package tutorial;
+
+option java_multiple_files = true;
+option java_package = "com.example.tutorial.protos";
+option java_outer_classname = "UsersProtos";
+
+message Request {
+  int32 id = 1;
+}
+
+message Response {
+  string fname = 1;
+  string lname = 2;
+  int32 id = 3;
+  optional string email = 4;
+}
+
+service AddService {
+  rpc GetUser(Request) returns (Response);
+}
+```
