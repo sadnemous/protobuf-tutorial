@@ -74,3 +74,27 @@ soumen@UB:~/java_lab/proto/protobuf-tutorial/users-java$ find .
 ./com/example/tutorial/protos/Request.java
 ./com/example/tutorial/protos/Response.java
 ```
+
+
+### Date: 01/25/2025 
+Did loads of thing. let me try to put it in tabular format
+|sl.|Step|Desc|Failure|Solution|
+|---|---|---|---|---|
+|1|[Started From Here](https://stackoverflow.com/questions/60404663/how-to-generate-openapi-3-documentation-from-protobuf-files)|Studied and prepare fro cloning|-|
+|2|Cloned [gnostic](https://github.com/google/gnostic)|cd cmd/protoc-gen-openapi;go build|-||
+|3|which protoc-gen-openapi|Correctly installed|||
+|4|Updated genProto.sh|```bash|||
+|||SRC_DIR=proto|||
+|||DST_DIR=users-java|||
+|||SWAGGER=openapi|||
+|||rm -fr $DST_DIR|||
+|||rm -fr $SWAGGER|||
+|||mkdir -p $DST_DIR|||
+|||mkdir -p $SWAGGER|||
+||||||
+|||protoc -I=$SRC_DIR \|||
+|||    --java_out=$DST_DIR \|||
+|||    --openapi_out=$SWAGGER \|||
+|||    $SRC_DIR/users.proto|||
+|||```|||
+||||||
