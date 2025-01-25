@@ -90,4 +90,17 @@ Did loads of thing. let me try to put it in tabular format
 |7|Updated proto file and changed the version to 3|ran and failed| yes faile <br> <pre>soumen@UB:~/golang/work-2/protobuf-tutorial$ ./genProto.sh  <br> users.proto:10:3: Expected "required", "optional", or "repeated". <br> users.proto:14:3: Expected "required", "optional", or "repeated". <br> users.proto:15:3: Expected "required", "optional", or "repeated". <br> users.proto:16:3: Expected "required", "optional", or "repeated". <br>  <br> </pre>|BEN STOKES!!
 |8|Updated proto file added required to mandatory fields<br>ran the script|Sweeeet!! Got the output which is promising!!|||
 
+###
+Note: when I tried to build solo-io it failed
+```bash
+mkdir -p /home/soumen/golang/protoc-gen-openapi/_output/.bin
+GOBIN=/home/soumen/golang/protoc-gen-openapi/_output/.bin go install github.com/golang/protobuf/protoc-gen-go
+go: downloading go1.22 (linux/amd64)
+go: download go1.22 for linux/amd64: toolchain not available
+make: *** [Makefile:13: install-deps] Error 1
+```
+<br> Solution: found here [Toolchain-not-available-error-prevents-me-from-using-any-go-commands](https://stackoverflow.com/questions/78519711/toolchain-not-available-error-prevents-me-from-using-any-go-commands)
+
+<br> Fixed it by editing the go.mod file.
+<br> changed go 1.22 to go 1.22.0
 #### I will update the repo and push the changes
