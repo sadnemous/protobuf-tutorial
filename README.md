@@ -83,4 +83,4 @@ Did loads of thing. let me try to put it in tabular format
 |1|[Started From Here](https://stackoverflow.com/questions/60404663/how-to-generate-openapi-3-documentation-from-protobuf-files)|Studied and prepare fro cloning|-|
 |2|Cloned [gnostic](https://github.com/google/gnostic)|cd cmd/protoc-gen-openapi;go build|-||
 |3|which protoc-gen-openapi|Correctly installed|||
-|4|Updated genProto.sh|<code>SRC_DIR=proto <br> DST_DIR=users-java <br> SWAGGER=openapi <br> rm -fr $DST_DIR <br> rm -fr $SWAGGER <br> mkdir -p $DST_DIR <br> mkdir -p $SWAGGER <br>  <br> protoc -I=$SRC_DIR \ <br>     --java_out=$DST_DIR \ <br>     --openapi_out=$SWAGGER \ <br>     $SRC_DIR/users.proto <br> </code>|||
+|4|Updated genProto.sh|<pre>SRC_DIR=proto <br> DST_DIR=users-java <br> SWAGGER=openapi <br> rm -fr $DST_DIR <br> rm -fr $SWAGGER <br> mkdir -p $DST_DIR <br> mkdir -p $SWAGGER <br>  <br> protoc -I=$SRC_DIR \ <br>     --java_out=$DST_DIR \ <br>     --openapi_out=$SWAGGER \ <br>     $SRC_DIR/users.proto <br> </pre>|||
