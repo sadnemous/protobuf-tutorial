@@ -86,15 +86,12 @@ Did loads of thing. let me try to put it in tabular format
 |4|Updated genProto.sh|```bash|||
 |||SRC_DIR=proto|||
 |||DST_DIR=users-java|||
-|||SWAGGER=openapi|||
+|||OAPI=openapi|||
 |||rm -fr $DST_DIR|||
-|||rm -fr $SWAGGER|||
+|||rm -fr $OAPI|||
 |||mkdir -p $DST_DIR|||
-|||mkdir -p $SWAGGER|||
+|||mkdir -p $OAPI|||
 ||||||
-|||protoc -I=$SRC_DIR \|||
-|||    --java_out=$DST_DIR \|||
-|||    --openapi_out=$SWAGGER \|||
-|||    $SRC_DIR/users.proto|||
+|||protoc -I=$SRC_DIR --java_out=$DST_DIR --openapi_out=$OAPI $SRC_DIR/users.proto|||
 |||```|||
 ||||||
