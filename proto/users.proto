@@ -1,19 +1,19 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package tutorial;
-
+option go_package = "com.example.tutorial.protos";
 option java_multiple_files = true;
 option java_package = "com.example.tutorial.protos";
 option java_outer_classname = "UsersProtos";
 
 message Request {
-  int32 id = 1;
+  required int32 id = 1;
 }
 
 message Response {
-  string fname = 1;
-  string lname = 2;
-  int32 id = 3;
+  required string fname = 1;
+  required string lname = 2;
+  required int32 id = 3;
   optional string email = 4;
 }
 
