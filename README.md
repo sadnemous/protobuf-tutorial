@@ -115,12 +115,13 @@ npm install -g @openapitools/openapi-generator-cli
 2. Generate the Spring Boot application
 Use the following command, replacing <your-openapi-spec.yaml> with the path to your OpenAPI specification file:
 Code
-
+```bash
 openapi-generator-cli generate \
   -i <your-openapi-spec.yaml> \
   -g spring \
   -o my-spring-boot-app \
   --additional-properties=library=spring-boot
+```
 This command will:
 Use the OpenAPI Generator CLI to generate code.
 Read the OpenAPI specification from the file you provide.
@@ -132,8 +133,9 @@ Import the generated project into your favorite IDE (e.g., IntelliJ IDEA, Eclips
 4. Build and run the application
 Build and run the application using your IDE or the following command:
 Code
-
-mvn spring-boot:run 
+```bash
+mvn spring-boot:run
+```
 5. Customize and add logic
 The generated application will contain the basic structure and controllers based on your OpenAPI specification. You'll need to add your own business logic and customize the code as needed.
 Alternative Method: Using Springdoc OpenAPI
