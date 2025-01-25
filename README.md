@@ -90,3 +90,4 @@ Did loads of thing. let me try to put it in tabular format
 |7|Updated proto file and changed the version to 3|ran and failed| yes faile <br> <pre>soumen@UB:~/golang/work-2/protobuf-tutorial$ ./genProto.sh  <br> users.proto:10:3: Expected "required", "optional", or "repeated". <br> users.proto:14:3: Expected "required", "optional", or "repeated". <br> users.proto:15:3: Expected "required", "optional", or "repeated". <br> users.proto:16:3: Expected "required", "optional", or "repeated". <br>  <br> </pre>|BEN STOKES!!
 |8|Updated proto file added required to mandatory fields<br>ran the script|Sweeeet!! Got the output which is promising!!|||
 
+#### I will update the repo and push the changes
