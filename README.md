@@ -103,3 +103,57 @@ make: *** [Makefile:13: install-deps] Error 1
 <br> Fixed it by editing the go.mod file.
 <br> changed go 1.22 to go 1.22.0
 #### I will update the repo and push the changes
+
+### Let us see if we can convert the generated opnapi3 spec to springboot application:
+got this from Gemini
+
+1. Install OpenAPI Generator
+You can install it using the following command:
+Code
+
+npm install -g @openapitools/openapi-generator-cli
+2. Generate the Spring Boot application
+Use the following command, replacing <your-openapi-spec.yaml> with the path to your OpenAPI specification file:
+Code
+
+openapi-generator-cli generate \
+  -i <your-openapi-spec.yaml> \
+  -g spring \
+  -o my-spring-boot-app \
+  --additional-properties=library=spring-boot
+This command will:
+Use the OpenAPI Generator CLI to generate code.
+Read the OpenAPI specification from the file you provide.
+Generate a Spring Boot project.
+Output the generated code in the my-spring-boot-app directory.
+Use the Spring Boot library for generation.
+3. Import the generated project
+Import the generated project into your favorite IDE (e.g., IntelliJ IDEA, Eclipse) as a Maven or Gradle project.
+4. Build and run the application
+Build and run the application using your IDE or the following command:
+Code
+
+mvn spring-boot:run 
+5. Customize and add logic
+The generated application will contain the basic structure and controllers based on your OpenAPI specification. You'll need to add your own business logic and customize the code as needed.
+Alternative Method: Using Springdoc OpenAPI
+You can also use the Springdoc OpenAPI library to generate OpenAPI documentation directly from your Spring Boot application.
+1. Add the dependency
+Add the following dependency to your pom.xml (for Maven):
+Code
+```
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-ui</artifactId>
+    <version>1.6.14</version>
+</dependency>
+```
+2. Annotate your code
+Use annotations like @Operation, @ApiResponses, @Schema to document your API endpoints and data models.
+3. Access the documentation
+Once you run your application, you can access the Swagger UI at http://localhost:8080/swagger-ui.html.
+
+
+
+
+
