@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+package users;
+import "google/api/annotations.proto";
+import "openapiv3/annotations.proto";
+option go_package = "com.example.users";
+option java_multiple_files = true;
+
+option (openapi.v3.document) = {
+  info: {
+    title: "Title from annotation";
+    version: "Version from annotation";
+    description: "Description from annotation";
+    contact: {
+      name: "Contact Name";
+      url: "https://github.com/google/gnostic";
+      email: "gnostic@google.com";
+    }
+    license: {
+      name: "Apache License";
+      url: "https://github.com/google/gnostic/blob/master/LICENSE";
+    }
+  }
+  components: {
+    security_schemes: {
+      additional_properties: [
+        {
+          name: "BasicAuth";
+          value: {
+            security_scheme: {
+              type: "http";
+              scheme: "basic";
+            }
+          }
+        }
+      ]
+    }
+  }
+};
+
+message UserRequest {
+  int64 userId     = 1;
+}
+
+message UserResponse {
+  int64 userId     = 1;
+  string fname = 2;
+  string lname = 3;
+}
+
+
+service UserSvc {
+  rpc GetUser(UserRequest) returns(UserResponse) {
+    option(google.api.http) = {
+        post: "/usrsvc/getuser"
+        body: "*"
+    };
+  }
+}
+
