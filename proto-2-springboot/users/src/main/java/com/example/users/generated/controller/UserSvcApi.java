@@ -35,7 +35,7 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-15T22:10:27.200151127-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-16T18:33:19.267256095-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
 @Validated
 @Controller
 @Tag(name = "UserSvc", description = "the UserSvc API")
@@ -77,12 +77,12 @@ public interface UserSvcApi {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"fname\" : \"fname\", \"lname\" : \"lname\", \"userId\" : \"userId\" }";
+                    String exampleString = "{ \"fname\" : \"fname\", \"lname\" : \"lname\", \"userId\" : 0 }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"code\" : 0, \"details\" : [ { \"@type\" : \"@type\" }, { \"@type\" : \"@type\" } ], \"message\" : \"message\" }";
+                    String exampleString = "{ \"code\" : 6, \"details\" : [ { \"@type\" : \"@type\" }, { \"@type\" : \"@type\" } ], \"message\" : \"message\" }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

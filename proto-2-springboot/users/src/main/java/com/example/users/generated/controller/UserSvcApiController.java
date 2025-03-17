@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-15T22:10:27.200151127-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-16T18:33:19.267256095-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
 @Controller
 @RequestMapping("${openapi.titleFromAnnotation.base-path:}")
 public class UserSvcApiController implements UserSvcApi {

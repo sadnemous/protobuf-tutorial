@@ -24,7 +24,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Status", description = "The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors).")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-15T22:10:27.200151127-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-16T18:33:19.267256095-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
 public class Status {
 
   private @Nullable Integer code;

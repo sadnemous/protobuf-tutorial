@@ -19,16 +19,16 @@ import jakarta.annotation.Generated;
  * UserResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-15T22:10:27.200151127-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-16T18:33:19.267256095-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
 public class UserResponse {
 
-  private @Nullable String userId;
+  private @Nullable Long userId;
 
   private @Nullable String fname;
 
   private @Nullable String lname;
 
-  public UserResponse userId(String userId) {
+  public UserResponse userId(Long userId) {
     this.userId = userId;
     return this;
   }
@@ -40,11 +40,11 @@ public class UserResponse {
   
   @Schema(name = "userId", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("userId")
-  public String getUserId() {
+  public Long getUserId() {
     return userId;
   }
 
-  public void setUserId(String userId) {
+  public void setUserId(Long userId) {
     this.userId = userId;
   }
 

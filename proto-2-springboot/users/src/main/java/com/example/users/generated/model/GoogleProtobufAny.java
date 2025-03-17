@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
  */
 
 @Schema(name = "GoogleProtobufAny", description = "Contains an arbitrary serialized message along with a @type that describes the type of the serialized message.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-15T22:10:27.200151127-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-03-16T18:33:19.267256095-05:00[America/Chicago]", comments = "Generator version: 7.12.0")
 public class GoogleProtobufAny {
 
   private @Nullable String atType;

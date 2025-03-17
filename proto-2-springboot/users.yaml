@@ -68,12 +68,14 @@ components:
             type: object
             properties:
                 userId:
-                    type: string
+                    type: integer
+                    format: int64
         UserResponse:
             type: object
             properties:
                 userId:
-                    type: string
+                    type: integer
+                    format: int64
                 fname:
                     type: string
                 lname:

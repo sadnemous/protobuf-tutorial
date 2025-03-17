@@ -1,0 +1,84 @@
+.:
+total 12
+-rw-rw-r-- 1 soumen soumen    0 Mar 16 21:39 list
+-rw-rw-r-- 1 soumen soumen 3768 Mar 16 20:49 pom.xml
+-rw-rw-r-- 1 soumen soumen  850 Mar 16 20:49 README.md
+drwxrwxr-x 4 soumen soumen 4096 Mar 16 20:49 src
+
+./src:
+total 8
+drwxrwxr-x 4 soumen soumen 4096 Mar 16 20:49 main
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 test
+
+./src/main:
+total 8
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 java
+drwxrwxr-x 2 soumen soumen 4096 Mar 16 20:49 resources
+
+./src/main/java:
+total 4
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 com
+
+./src/main/java/com:
+total 4
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 example
+
+./src/main/java/com/example:
+total 4
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 users
+
+./src/main/java/com/example/users:
+total 12
+drwxrwxr-x 5 soumen soumen 4096 Mar 16 20:49 generated
+-rw-rw-r-- 1 soumen soumen 1169 Mar 16 20:49 OpenApiGeneratorApplication.java
+-rw-rw-r-- 1 soumen soumen  994 Mar 16 20:49 RFC3339DateFormat.java
+
+./src/main/java/com/example/users/generated:
+total 12
+drwxrwxr-x 2 soumen soumen 4096 Mar 16 20:49 configuration
+drwxrwxr-x 2 soumen soumen 4096 Mar 16 21:30 controller
+drwxrwxr-x 2 soumen soumen 4096 Mar 16 20:49 model
+
+./src/main/java/com/example/users/generated/configuration:
+total 8
+-rw-rw-r-- 1 soumen soumen  542 Mar 16 20:49 HomeController.java
+-rw-rw-r-- 1 soumen soumen 1961 Mar 16 20:49 SpringDocConfiguration.java
+
+./src/main/java/com/example/users/generated/controller:
+total 16
+-rw-rw-r-- 1 soumen soumen  662 Mar 16 20:49 ApiUtil.java
+-rw-rw-r-- 1 soumen soumen 1764 Mar 16 20:49 UserSvcApiController.java
+-rw-rw-r-- 1 soumen soumen 2398 Mar 16 20:49 UserSvcApiDelegate.java
+-rw-rw-r-- 1 soumen soumen 2964 Mar 16 20:49 UserSvcApi.java
+
+./src/main/java/com/example/users/generated/model:
+total 20
+-rw-rw-r-- 1 soumen soumen 4002 Mar 16 20:49 GoogleProtobufAny.java
+-rw-rw-r-- 1 soumen soumen 5249 Mar 16 20:49 Status.java
+-rw-rw-r-- 1 soumen soumen 2019 Mar 16 20:49 UserRequest.java
+-rw-rw-r-- 1 soumen soumen 3095 Mar 16 20:49 UserResponse.java
+
+./src/main/resources:
+total 8
+-rw-rw-r-- 1 soumen soumen  141 Mar 16 20:49 application.properties
+-rw-rw-r-- 1 soumen soumen 3431 Mar 16 20:49 openapi.yaml
+
+./src/test:
+total 4
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 java
+
+./src/test/java:
+total 4
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 com
+
+./src/test/java/com:
+total 4
+drwxrwxr-x 3 soumen soumen 4096 Mar 16 20:49 example
+
+./src/test/java/com/example:
+total 4
+drwxrwxr-x 2 soumen soumen 4096 Mar 16 20:49 users
+
+./src/test/java/com/example/users:
+total 4
+-rw-rw-r-- 1 soumen soumen 227 Mar 16 20:49 OpenApiGeneratorApplicationTests.java
