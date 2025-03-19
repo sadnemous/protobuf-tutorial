@@ -1,0 +1,16 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/main/java/com/example/users/OpenAPI2SpringBoot.java
+src/main/java/com/example/users/RFC3339DateFormat.java
+src/main/java/com/example/users/generated/configuration/HomeController.java
+src/main/java/com/example/users/generated/configuration/OpenAPIDocumentationConfig.java
+src/main/java/com/example/users/generated/controller/ApiUtil.java
+src/main/java/com/example/users/generated/controller/UserSvcApi.java
+src/main/java/com/example/users/generated/controller/UserSvcApiController.java
+src/main/java/com/example/users/generated/controller/UserSvcApiDelegate.java
+src/main/java/com/example/users/generated/model/GoogleProtobufAny.java
+src/main/java/com/example/users/generated/model/Status.java
+src/main/java/com/example/users/generated/model/UserRequest.java
+src/main/java/com/example/users/generated/model/UserResponse.java
+src/main/resources/application.properties
